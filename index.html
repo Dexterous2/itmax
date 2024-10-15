@@ -1,0 +1,1069 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ITMAX Global</title>
+    <!-- https://unpkg.com/tailwindcss@1.9.6/dist/tailwind.min.css -->
+    <link rel="stylesheet" type="text/css" href="./css/slick.css"/>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body class="bg-white">
+
+    <header class="fixed top-0 w-full bg-transparent z-[1500]">
+        <div class="container px-5 mx-auto">
+            <div class="flex items-center py-3">
+                <div class="grow">
+                    <img src="./assets/logo.png" class="w-[90px] h-[50px] app-logo">
+                </div>
+                <div class="flex gap-3">
+                    <select class="border rounded-full px-1 text-sm">
+                        <option value="en">EN</option>
+                    </select>
+                    <img src="./icons/search.svg" class="w-[24px] h-[24px] cursor-pointer">
+                    <img src="./icons/toggle.svg" class="w-[24px] h-[24px] cursor-pointer open-sidebar">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sidebar -->
+     <section class="sidebar fixed w-screen h-screen bg-white left-[-100vw] z-[3000] overflow-y-auto">
+        <div class="grid grid-cols-1 md:grid-cols-12 min-h-screen">
+            <div class="col-span-5 p-[3rem] py-[2rem]">
+                <div class="flex mb-[5rem] items-center">
+                    <div class="grow">
+                        <img src="./assets/logo.png" class="w-[90px] h-[50px]">
+                    </div>
+                    <div class="flex gap-3 justify-end  md:hidden">
+                        <select class="border rounded-full px-1 text-sm">
+                            <option value="en">EN</option>
+                        </select>
+                        <img src="./icons/search.svg" class="w-[24px] h-[24px] cursor-pointer">
+                        <img src="./icons/close.svg" class="w-[24px] h-[24px] cursor-pointer close-sidebar">
+                    </div>
+                </div>
+
+                <div class="flex flex-col gap-3">
+                    <a href="#" class="item active">Home</a>
+                    <a href="#" class="item">About Us</a>
+                    <a href="#" class="item">Case studies</a>
+                    <a href="#" class="item">In the spotlight</a>
+                    <a href="#" class="item">Updates & Insights</a>
+                    <a href="#" class="item">Careers</a>
+                    <a href="#" class="item">Contact Us</a>
+                </div>
+            </div>
+            <div class="col-span-7 p-[3rem] py-[2rem] bg-[#F5F5F5] h-full flex flex-col">
+                <!-- <div class="flex flex-col">  -->
+                    <div class="hidden md:block">
+                        <div class="flex gap-3 justify-end mb-[5rem]">
+                            <select class="border rounded-full px-1 text-sm">
+                                <option value="en">EN</option>
+                            </select>
+                            <img src="./icons/search.svg" class="w-[24px] h-[24px] cursor-pointer">
+                            <img src="./icons/close.svg" class="w-[24px] h-[24px] cursor-pointer close-sidebar">
+                        </div>
+                    </div>
+
+                    <h5 class="text-3xl font-medium mb-[2rem]">Services</h5>
+
+                
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-5">
+                        <a href="#" class="flex items-center bg-white p-4 px-5 rounded-[1.5rem] font-bold  hover:px-6 transition-all h-fit">
+                            <div class="grow text-nowrap">Managed <br>Services</div>
+                            <div><img src="./icons/right-arrow.svg" class="w-[30px]"></div>
+                        </a>
+                        <a href="#" class="flex items-center bg-white p-4 px-5 rounded-[1.5rem] font-bold hover:px-6 transition-all h-fit">
+                            <div class="grow text-nowrap">Infrastructure <br>& Cloud</div>
+                            <div><img src="./icons/right-arrow.svg" class="w-[30px]"></div>
+                        </a>
+                        <a href="#" class="flex items-center bg-white p-4 px-5 rounded-[1.5rem] font-bold hover:px-6 transition-all h-fit">
+                            <div class="grow text-nowrap">Managed <br>Security</div>
+                            <div><img src="./icons/right-arrow.svg" class="w-[30px]"></div>
+                        </a>
+                        <a href="#" class="flex items-center bg-white p-4 px-5 rounded-[1.5rem] font-bold hover:px-6 transition-all h-fit">
+                            <div class="grow text-nowrap">AI, BI & <br>Analytics</div>
+                            <div><img src="./icons/right-arrow.svg" class="w-[30px]"></div>
+                        </a>
+                        <a href="#" class="flex items-center bg-white p-4 px-5 rounded-[1.5rem] font-bold hover:px-6 transition-all h-fit">
+                            <div class="grow text-nowrap">Innovation & Digital <br>Transformation</div>
+                            <div><img src="./icons/right-arrow.svg" class="w-[30px]"></div>
+                        </a>
+                        <a href="#" class="flex items-center bg-white p-4 px-5 rounded-[1.5rem] font-bold hover:px-6 transition-all h-fit">
+                            <div class="grow text-nowrap">Unified <br>& Communications</div>
+                            <div><img src="./icons/right-arrow.svg" class="w-[30px]"></div>
+                        </a>
+                    </div>
+                    <div class="grow"></div>
+                    <div class="flex mt-5 md:m-0 md:items-end flex-col md:flex-row gap-10 md:gap-0">
+                        <div class="grow">
+                            <h6 class="mb-4 text-[#555] font-medium">Our Awards</h6>
+                            <div class="flex items-center gap-3">
+                                <img src="./assets/awards/1.png" class="w-[50px]">
+                                <img src="./assets/awards/2.png" class="h-[50px]">
+                            </div>
+                        </div>
+                        <div class="flex flex-row md:flex-col gap-3">
+                            <a href="https://facebook.com" target="_blank" class="bg-[#E4E4E4] w-[40px] h-[40px] rounded-full p-2"><img src="./assets/social/facebook.png" alt="Facebook" class="w-[25px] h-[25px]" /></a>
+                            <a href="#" class="bg-[#E4E4E4] w-[40px] h-[40px] rounded-full flex items-center justify-center"><img src="./assets/social/x.png" alt="X" class="w-[20px] h-[20px]"/></a>
+                            <a href="#" class="bg-[#E4E4E4] w-[40px] h-[40px] rounded-full flex items-center justify-center"><img src="./assets/social/instagram.png" alt="Instagram" class="w-[20px] h-[20px]"/></a>
+                            <a href="#" class="bg-[#E4E4E4] w-[40px] h-[40px] rounded-full flex items-center justify-center"><img src="./assets/social/linked-in.png" alt="LinedIn" class="w-[20px] h-[20px]"/></a>
+                        </div>
+                    </div>
+                <!-- </div> -->
+            </div>
+        </div>
+     </section>
+
+    <!-- Banner -->
+    <section class="banner w-full h-screen flex flex-col items-start justify-center" id="home">
+        <div class="container px-5 mx-auto text-black">
+
+            <div class="ms-[1rem] md:ms-[5rem]">
+                <div class="heading-1 h-[48px] md:h-[115px] relative overflow-hidden font-light text-[2rem] md:text-[6rem] md:leading-[7rem] text-black">
+                    <div class="flex gap-3 items-center">Managed <span class="font-bold">IT</span></div>
+                    <div class="flex gap-3 items-center">Digital <span class="font-bold">Innovation</span></div>
+                </div>
+            </div>
+
+            <div class="flex gap-2 md:gap-5 font-light text-[2rem] md:text-[6rem] md:leading-[7rem] text-black">
+                <div>to</div>
+                <div class="heading-2 h-[48px] md:h-[115px] relative overflow-hidden font-bold">
+                    <div class="flex gap-0 items-center font-bold">
+                        <p>Emp</p>
+                        <img src="./assets/logo-icon.png" class="w-[35px] h-[35px] md:w-[60px] md:h-[60px]">
+                        <p>wer</p>
+                    </div>
+                    <div class="ont-bold">Delight</div>
+                </div>
+            </div>
+
+            <div class="flex gap-2 md:gap-5 font-light text-[2rem] ms-[1rem] md:text-[6rem] md:ms-[5rem] md:leading-[7rem] text-black">
+                <div>Your</div>
+                <div class="heading-3 h-[48px] md:h-[115px] relative overflow-hidden font-bold">
+                    <div>Teams</div>
+                    <div>Clients</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="animated-logo center-screen z-[2000] bg-red p-3 rounded-full flex items-center justify-center opacity-0">
+            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 74 69" fill="none">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M3.36785 29.9824C3.36785 29.9824 9.75444 35.6688 9.05191 49.9063C8.58356 60.4668 23.592 81.6734 28.829 57.0037C31.703 43.4289 42.8369 43.322 49.9899 42.4241C84.0517 38.1486 77.6651 6.80909 54.3754 12.3459C40.4526 15.6808 39.3882 41.5477 24.1668 42.1249C21.6954 42.1356 19.2728 41.4344 17.1862 40.1044C15.0996 38.7745 13.4365 36.8716 12.3942 34.6213C8.49841 26.8185 17.0139 14.6119 18.9511 5.35541C19.6536 1.99913 18.7382 0.652344 17.0564 0.652344C9.05191 0.716476 -5.36048 20.8542 3.36785 29.9824Z" fill="#FCFEFE"/>
+            </svg>
+        </div>
+        <!-- <img src="./assets/logo-icon.png" > -->
+    </section>
+
+    <!-- Overview -->
+    <section class="container p-5 pt-10 mx-auto" id="overview">
+        <div class="overview-background w-full min-h-[50vh] lg:min-h-[70vh] flex items-center justify-center p-5 rounded-[2.5rem]">
+            <div class="max-w-[450px]">
+                <p class="text-white text-2xl text-center">
+                    IT Max Global is a leading <span class="font-bold">MSP, MSSP</span> 
+                    and <span class="font-bold">Digital Transformation</span> partner 
+                    for public and private sector entities in the UAE and MEA region.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section class="container p-5 mx-auto" id="services">
+        <div class="w-full bg-light p-10 rounded-[3rem]">
+            <div class="relative max-w-[450px] mx-auto mb-10 heading">
+                <h5 class="text-2xl text-center">Advisory, Implementation, and Full Support for <span class="font-bold">Your Technology Needs</span></h5>
+            </div>
+
+            <div class="relative grid md:grid-cols-3 gap-3 content">
+                <div class="flex flex-col gap-3 md:mt-[3rem]">
+                    <div class="bg-white p-5 rounded-2xl js-tilt hover:shadow-xl">
+                        <img src="./icons/managed-services.svg" class="w-[50px] h-[50px] mb-2">
+                        <h5 class="font-semibold mb-2 text-lg leading-[1.4rem]">Managed <br>Services</h5>
+                        <div class="flex gap-3 items-center">
+                            <p class="text-dark text-xs">We have the technology to keep your technology running</p>
+                            <img src="./icons/right-arrow.svg" class="w-[25px] h-[25px]">
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-5 rounded-2xl js-tilt hover:shadow-xl">
+                        <img src="./icons/ai-bi-analysis.svg" class="w-[50px] h-[50px] mb-2">
+                        <h5 class="font-semibold mb-2 text-lg leading-[1.4rem]">AI, BI & <br>Analytics</h5>
+                        <div class="flex gap-3 items-center">
+                            <p class="text-dark text-xs">AI rewards early adopters. Let us help you become one</p>
+                            <img src="./icons/right-arrow.svg" class="w-[25px] h-[25px]">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex flex-col gap-3">
+                    <div class="bg-white p-5 rounded-2xl js-tilt hover:shadow-xl">
+                        <img src="./icons/Infrastructure-and-cloud.svg" class="w-[50px] h-[50px] mb-2">
+                        <h5 class="font-semibold mb-2 text-lg leading-[1.4rem]">Infrastructure <br>& Cloud</h5>
+                        <div class="flex gap-3  items-center">
+                            <p class="text-dark text-xs">An infrastructure that propels you forward, not holds you back</p>
+                            <img src="./icons/right-arrow.svg" class="w-[25px] h-[25px]">
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-5 rounded-2xl js-tilt hover:shadow-xl">
+                        <img src="./icons/digital-transformation.svg" class="w-[50px] h-[50px] mb-2">
+                        <h5 class="font-semibold mb-2 text-lg leading-[1.4rem]">Innovation & Digital <br>Transformation</h5>
+                        <div class="flex gap-3 items-center">
+                            <p class="text-dark text-xs">Deliver massive value to your users</p>
+                            <img src="./icons/right-arrow.svg" class="w-[25px] h-[25px]">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex flex-col gap-3 md:mt-[3rem]">
+                    <div class="bg-white p-5 rounded-2xl js-tilt hover:shadow-xl">
+                        <img src="./icons/managed-security.svg" class="w-[50px] h-[50px] mb-2">
+                        <h5 class="font-semibold mb-2 text-lg leading-[1.4rem]">Managed <br>Security</h5>
+                        <div class="flex gap-3 items-center">
+                            <p class="text-dark text-xs">The last thing your business needs is a breach or a data leak</p>
+                            <img src="./icons/right-arrow.svg" class="w-[25px] h-[25px]">
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-5 rounded-2xl js-tilt hover:shadow-xl">
+                        <img src="./icons/unified-communication.svg" class="w-[50px] h-[50px] mb-2">
+                        <h5 class="font-semibold mb-2 text-lg leading-[1.4rem]">Unified <br>Communication</h5>
+                        <div class="flex gap-3 items-center">
+                            <p class="text-dark text-xs">Seamless Collaboration and Customer service. Powered by Technology</p>
+                            <img src="./icons/right-arrow.svg" class="w-[25px] h-[25px]">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="max-w-[500px] mx-auto mt-[2rem]">
+                <img src="./assets//service-overview.png" class="w-full">
+            </div>
+        </div>
+    </section>
+
+    <!-- Quote -->
+    <section class="container py-5 px-5 md:px-20 mx-auto" id="quote">
+        <div class="relative heading">
+            <h5 class="text-2xl">Innovative Solutions</h5>
+            <h5 class="text-2xl font-bold ms-[2rem] mb-5">Shaping the Future</h5>
+        </div>
+
+        <div class="relative content bg-red p-8 rounded-[2.5rem] text-white bg-[url('../assets/testimonial-background.png')] bg-image">
+            <div class="text-[5rem] mb-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 77 76" fill="none">
+                    <path d="M34.1753 10.8594L23.8903 47.7737L20.462 33.9308C24.9292 33.9308 28.5653 35.2126 31.3703 37.776C34.1753 40.3395 35.5778 43.8772 35.5778 48.3889C35.5778 52.7981 34.1233 56.387 31.2145 59.1556C28.4095 61.8216 24.8772 63.1546 20.6178 63.1546C16.2545 63.1546 12.6183 61.8216 9.70945 59.1556C6.90445 56.387 5.50195 52.7981 5.50195 48.3889C5.50195 47.0559 5.60584 45.7741 5.81362 44.5437C6.0214 43.2107 6.43695 41.6726 7.06029 39.9294C7.68362 38.1862 8.56668 35.8791 9.70945 33.0079L18.7478 10.8594L34.1753 10.8594ZM70.952 10.8594L60.667 47.7737L57.2386 33.9308C61.7058 33.9308 65.342 35.2126 68.147 37.776C70.952 40.3395 72.3545 43.8772 72.3545 48.3889C72.3545 52.7981 70.9 56.387 67.9911 59.1556C65.1861 61.8216 61.6539 63.1546 57.3945 63.1546C53.0311 63.1546 49.395 61.8216 46.4861 59.1556C43.6811 56.387 42.2786 52.7981 42.2786 48.3889C42.2786 47.0559 42.3825 45.7741 42.5903 44.5437C42.7981 43.2107 43.2136 41.6726 43.837 39.9294C44.4603 38.1862 45.3433 35.8791 46.4861 33.0079L55.5245 10.8594L70.952 10.8594Z" fill="white"/>
+                </svg>
+            </div>
+            <blockquote  class="text-xl mb-5 font-medium">
+                We loved IT Max Global because of their vision, attention to requirement details, and adherence to best practices. They have skilled teams across all discipline, and their institutional track record with some of the most prestigious governmental entities is truly impressive!
+            </blockquote >
+
+            <div class="flex flex-col md:flex-row gap-3 items-center">
+                <img src="./assets/asmaa-al-janahi.png" class="w-[50px] h-[50px]">
+                <div class="grow">
+                    <h5 class="font-semibold">Asmaa Al-Janahi</h5>
+                    <p class="text-[12px]">Prime Minister's Office</p>
+                </div>
+                <div class="text-[10px] font-medium text-center">
+                    <p>UNITED ARAB EMIRATES</p>
+                    <p>MINISTER OF STATE OFFICE</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CASE STUDIES -->
+    <section class="mt-5 bg-white" id="case-study">
+        <div class="grid gap-5 grid-cols-1 md:grid-cols-2 md:gap-0 case-study" >
+            <div class="relative ">
+                <img id="study-image" src="./assets/case-study/case-study-1.png" class="w-full object-cover h-[400px] md:h-screen sticky top-0 left-0">
+                <!-- <img src="./assets/case-study/case-study-2.png" class="w-full object-cover h-screen">
+                <img src="./assets/case-study/case-study-3.png" class="w-full object-cover h-screen"> -->
+            </div>
+            <div class="relative p-5 md:p-[2rem] content">
+                <article class="min-h-screen" id="study-1" data-src="./assets/case-study/case-study-1.png">
+                    <img src="./assets/companies/louvre-abu-dhabi.png" class="w-[150px] mb-4">
+                    <h5 class="font-medium mb-3">Louvre Abu Dhabi <span class="text-light-dark">/ 2024</span></h5>
+                    <h5 class="font-bold text-2xl">Our Journey in Reshaping Louvre Abu Dhabi's Inventory Management</h5>
+                    <div class="my-3 mb-5">
+                        <div class="badge inline-block me-1 mb-2">Managed services</div>
+                        <div class="badge inline-block me-1 mb-2">Infrastructure & Cloud</div>
+                        <div class="badge inline-block me-1 mb-2">Managed Security</div>
+                        <div class="badge inline-block me-1 mb-2">Innovation & Digital Transformation</div>
+                    </div>
+
+                    <button class="btn-with-arrow mb-5">
+                        View case study 
+                        <img src="./icons/arrow-top-right.svg">
+                    </button>
+
+                    <div class="relateive md:ms-[-100px] md:mr-[50px]">
+                        <div class="bg-white p-8 rounded-[2.5rem] text-black box-shadow w-full">
+                            <div class="text-[5rem] mb-3">
+                                <img src="./icons/quote.svg" class="w-[30px]">
+                            </div>
+                            <blockquote  class="text-normal mb-5 font-medium">
+                                IT Max has a services model that truly works - they extend our team with their expertise in virtually every aspect of IT and digital innovation!
+                            </blockquote >
+                
+                            <div class="flex flex-col md:flex-row gap-3 items-center">
+                                <img src="./assets/asmaa-al-janahi.png" class="w-[40px] h-[40px] border rounded-full">
+                                <div class="grow">
+                                    <h5 class="font-semibold text-sm">Ghada Tabet</h5>
+                                    <p class="text-[12px]">Louvres Abu Dhabi</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="min-h-screen" id="study-2" data-src="./assets/case-study/case-study-2.png">
+                    <img src="./assets/companies/the-executive-council.png" class="w-[150px] mb-4">
+                    <h5 class="font-medium mb-3">The Executive Office<span class="text-light-dark">/ 2024</span></h5>
+                    <h5 class="font-bold text-2xl">Transforming Governance by Powering a Mega-Scale Government Portal</h5>
+                    <div class="my-3 mb-5">
+                        <div class="badge inline-block me-1 mb-2">Managed services</div>
+                        <div class="badge inline-block me-1 mb-2">Infrastructure & Cloud</div>
+                        <div class="badge inline-block me-1 mb-2">Managed Security</div>
+                        <div class="badge inline-block me-1 mb-2">Innovation & Digital Transformation</div>
+                    </div>
+    
+                    <button class="btn-with-arrow mb-5">
+                        View case study 
+                        <img src="./icons/arrow-top-right.svg">
+                    </button>
+    
+                    <div class="relateive md:ms-[-100px] md:mr-[50px]">
+                        <div class="bg-white p-8 rounded-[2.5rem] text-black box-shadow w-full">
+                            <div class="text-[5rem] mb-3">
+                                <img src="./icons/quote.svg" class="w-[30px]">
+                            </div>
+                            <blockquote  class="text-normal mb-5 font-medium">
+                                IT Max has a services model that truly works - they extend our team with their expertise in virtually every aspect of IT and digital innovation!
+                            </blockquote >
+                
+                            <div class="flex flex-col md:flex-row gap-3 items-center">
+                                <img src="./assets/asmaa-al-janahi.png" class="w-[40px] h-[40px] border rounded-full">
+                                <div class="grow">
+                                    <h5 class="font-semibold text-sm">Ghada Tabet</h5>
+                                    <p class="text-[12px]">Louvres Abu Dhabi</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article" class="min-h-screen" id="study-3" data-src="./assets/case-study/case-study-3.png">
+                    <img src="./assets/companies/oracle.png" class="w-[150px] mb-4">
+                    <h5 class="font-medium mb-3">Oracle<span class="text-light-dark">/ 2023</span></h5>
+                    <h5 class="font-bold text-2xl">Transforming Governance by Powering a Mega-Scale Government Portal</h5>
+                    <div class="my-3 mb-5">
+                        <div class="badge inline-block me-1 mb-2">Managed services</div>
+                        <div class="badge inline-block me-1 mb-2">Infrastructure & Cloud</div>
+                        <div class="badge inline-block me-1 mb-2">Managed Security</div>
+                        <div class="badge inline-block me-1 mb-2">Innovation & Digital Transformation</div>
+                    </div>
+    
+                    <button class="btn-with-arrow mb-5">
+                        View case study 
+                        <img src="./icons/arrow-top-right.svg">
+                    </button>
+    
+                    <div class="relateive md:ms-[-100px] md:mr-[50px]">
+                        <div class="bg-white p-8 rounded-[2.5rem] text-black box-shadow w-full">
+                            <div class="text-[5rem] mb-3">
+                                <img src="./icons/quote.svg" class="w-[30px]">
+                            </div>
+                            <blockquote  class="text-normal mb-5 font-medium">
+                                IT Max has a services model that truly works - they extend our team with their expertise in virtually every aspect of IT and digital innovation!
+                            </blockquote >
+                
+                            <div class="flex flex-col md:flex-row gap-3 items-center">
+                                <img src="./assets/asmaa-al-janahi.png" class="w-[40px] h-[40px] border rounded-full">
+                                <div class="grow">
+                                    <h5 class="font-semibold text-sm">Ghada Tabet</h5>
+                                    <p class="text-[12px]">Louvres Abu Dhabi</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Overview -->
+    <section class="max-w-[800px] p-5 pt-10 mx-auto mb-5 w-full">
+        <div class="bg-light rounded-[2.5rem] w-full flex items-center justify-center overflow-hidden">
+            <div class="grid md:grid-cols-2 md:gap-4 items-end">
+                <div class="p-[2rem] md:p-[3rem]">
+                    <h5 class="text-2xl mb-4">Take a Glimpse into <span class="font-bold">our Innovative Journey</span></h5>
+                    <button class="btn-with-arrow mb-5">
+                        View case study 
+                        <img src="./icons/arrow-top-right.svg">
+                    </button>
+                </div>
+                <div>
+                    <img src="./assets/robot-arm.png" class="h-full md:min-h-[250px] js-tilt">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats -->
+    <section  class="z-[1000] relative bg-[url('../assets/stats-bg.png')] min-h-[500px] w-full md:h-full bg-no-repeat bg-left-top bg-[length:100%_100%] rounded-t-[2.5rem] p-[3rem]" id="stats">
+        <h5 class="text-3xl">By the</h5>
+        <h5 class="text-3xl font-bold mb-4">Number</h5>
+
+        <div class="hidden md:block">
+            <div class="flex justify-center">
+                <div class="relative w-[220px]">
+                    <div class="z-[1000]  w-[220px] stat stat-1 flex flex-col absolute top-[180px] left-[200px] js-tilt">
+                        <h5 class="text-5xl font-semibold mb-2"><span class="count">170</span>+</h5>
+                        <p class="text-[12px] grow mb-2 font-medium">Customer Applications under our supervision</p>
+                        <img src="./assets/stat-1.png" class="h-[90px] w-full">
+                    </div>
+                </div>
+                <div class="relative w-[220px]">
+                    <div class="stat  w-[220px] stat-2 flex flex-col absolute top-[180px] js-tilt">
+                        <h5 class="text-5xl font-semibold mb-2"><span class="count">230</span>+</h5>
+                        <p class="text-[12px] grow mb-2 font-medium">Managed Endpoints</p>
+                        <img src="./assets/stat-2.png" class="h-[90px] w-full">
+                    </div>
+                </div>
+                <div class="relative w-[220px]">
+                    <div class="stat  w-[220px] stat-3 flex flex-col absolute top-[180px] left-[-180px] js-tilt">
+                        <h5 class="text-5xl font-semibold mb-2"><span class="count">88</span>%</h5>
+                        <p class="text-[12px] grow mb-2 font-medium">Clients retention rate for MSP contracts</p>
+                        <img src="./assets/stat-3.png" class="h-[90px] w-full">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 gap-3 block md:hidden mb-5">
+            <div class="relative">
+                <div class="stat w-full flex flex-col">
+                    <h5 class="text-5xl font-semibold mb-2">170+</h5>
+                    <p class="text-[12px] grow mb-2 font-medium">Customer Applications under our supervision</p>
+                    <img src="./assets/stat-1.png" class="h-[90px] w-full">
+                </div>
+            </div>
+            <div class="relative">
+                <div class="stat flex flex-col">
+                    <h5 class="text-5xl font-semibold mb-2">230+</h5>
+                    <p class="text-[12px] grow mb-2 font-medium">Managed Endpoints</p>
+                    <img src="./assets/stat-2.png" class="h-[90px] w-full">
+                </div>
+            </div>
+            <div class="relative">
+                <div class="stat flex flex-col">
+                    <h5 class="text-5xl font-semibold mb-2">88%</h5>
+                    <p class="text-[12px] grow mb-2 font-medium">Clients retention rate for MSP contracts</p>
+                    <img src="./assets/stat-3.png" class="h-[90px] w-full">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="z-[1100] relative overflow-x-hidden min-h-[100px] md:min-h-[130px] top-[-50px] trusted-partner-network">
+        <div style="letter-spacing: 10px;" dir="rtl" class="uppercase overflow-y-auto no-scrollbar bg-[#242424] p-0 ps-5 md:ps-10 text-white text-[2rem] md:text-[3rem] font-bold absolute -translate-x-1/2 -translate-y-1/2 bottom-[-10px] left-1/2 rotate-[-1.5deg] w-[102vw] text-nowrap">
+            Notable CLIENTS  ·  Notable CLIENTS ·  Notable CLIENTS ·  Notable CLIENTS ·  Notable CLIENTS ·  Notable CLIENTS 
+        </div>
+    </div>
+
+    <!-- Trusted Partners -->
+    <section class="partners container pb-5 px-5 md:px-20 mx-auto mb-10">
+        <!-- <div class="grid grid-cols-2 md:grid-cols-4 gap-[3rem] md:gap-[4rem] items-center"> -->
+        <div class="list-1 mb-[4rem]">
+            <div><img src="./assets/companies/trusted-partners/oracle.png"></div>
+            <div><img src="./assets/companies/trusted-partners/2.png"></div>
+            <div><img src="./assets/companies/trusted-partners/3.png"></div>
+            <div><img src="./assets/companies/trusted-partners/africell.png"></div>
+            <div><img src="./assets/companies/trusted-partners/oracle.png"></div>
+            <div><img src="./assets/companies/trusted-partners/2.png"></div>
+            <div><img src="./assets/companies/trusted-partners/3.png"></div>
+            <div><img src="./assets/companies/trusted-partners/africell.png"></div>
+        </div>
+
+        <div class="list-2">
+            <div><img src="./assets/companies/trusted-partners/5.png"></div>
+            <div><img src="./assets/companies/trusted-partners/6.png"></div>
+            <div><img src="./assets/companies/trusted-partners/7.png"></div>
+            <div><img src="./assets/companies/trusted-partners/zand.png"></div>
+            <div><img src="./assets/companies/trusted-partners/5.png"></div>
+            <div><img src="./assets/companies/trusted-partners/6.png"></div>
+            <div><img src="./assets/companies/trusted-partners/7.png"></div>
+            <div><img src="./assets/companies/trusted-partners/zand.png"></div>
+        </div>
+    </section>
+
+    <div class="relative overflow-hidden min-h-[130px] mb-5 global-partner-network">
+        <div style="letter-spacing: 10px;" class="uppercase overflow-y-auto no-scrollbar bg-red p-0 ps-5 md:ps-10 text-white text-[2rem] md:text-[3rem] font-bold absolute -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 rotate-[1.5deg] w-[102vw] text-nowrap">
+            Global partner network  ·  Global partner network ·  Global partner network ·  Global partner network ·  Global partner network ·  Global partner network ·  Global partner network
+        </div>
+    </div>
+
+    <!-- Global Partners -->
+    <section class="partners container py-5 px-5 md:px-20 mx-auto mb-10 md:mb-20 flex-col gap-5">
+        <!-- <div class="grid grid-cols-2 md:grid-cols-4 gap-[3rem] md:gap-[4rem] items-center"> -->
+        <div class="list-1 mb-[4rem]">
+            <div><img src="./assets/companies/global-partners/collab.png"></div>
+            <div><img src="./assets/companies/global-partners/micro-strategy.png"></div>
+            <div><img src="./assets/companies/global-partners/lenovo.png"></div>
+            <div><img src="./assets/companies/global-partners/sangoma.png"></div>
+            <div><img src="./assets/companies/global-partners/collab.png"></div>
+            <div><img src="./assets/companies/global-partners/micro-strategy.png"></div>
+            <div><img src="./assets/companies/global-partners/lenovo.png"></div>
+            <div><img src="./assets/companies/global-partners/sangoma.png"></div>
+        </div>
+
+        <div class="list-2">
+            <div><img src="./assets/companies/global-partners/microsoft.png"></div>
+            <div><img src="./assets/companies/global-partners/couchbase.png"></div>
+            <div><img src="./assets/companies/global-partners/bitdefender.png"></div>
+            <div><img src="./assets/companies/global-partners/cisco.png"></div>
+            <div><img src="./assets/companies/global-partners/microsoft.png"></div>
+            <div><img src="./assets/companies/global-partners/couchbase.png"></div>
+            <div><img src="./assets/companies/global-partners/bitdefender.png"></div>
+            <div><img src="./assets/companies/global-partners/cisco.png"></div>
+    </section>
+
+    <!-- Achievements -->
+    <section class="achievements container py-5 px-5 md:px-20 mx-auto">
+        <div class="grid md:grid-cols-2 gap-5">
+            <div class="h-screen flex flex-col justify-center sticky top-0">
+                <h6 class="text-red uppercase font-medium mb-2 text-sm">Achievements</h6>
+                <h5 class="text-3xl">In the</h5>
+                <h5 class="text-3xl font-semibold mb-3">Spotlight</h5>
+
+                <article>
+                    <small>July 23, 2024</small>
+                    <h6 class="text-lg font-semibold mb-2">Cloud & Managed Services: Naji Salameh Reveals IT Max' Approach | GISEC Global 2024 | TECHx English</h6>
+                    <p class="text-dark">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                </article>
+            </div>
+            <div class="relative">
+                <div class="min-h-screen flex items-center justify-center achievement"><img src="./assets/media.png" alt=""></div>
+                <div class="min-h-screen flex items-center justify-center achievement"><img src="./assets/media.png" alt=""></div>
+                <div class="min-h-screen flex items-center justify-center achievement"><img src="./assets/media.png" alt=""></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Latest Updates -->
+    <section class="latest-updated container py-5 px-5 md:px-20 mx-auto overflow-x-hidden">
+        <div class="flex items-center mb-5">
+            <div class="text-3xl grow">
+                <h5>Latest <span class="font-bold">Updates</span></h5>
+                <h4 class="font-bold">and Insights</h4>
+            </div>
+            <div class="flex gap-3">
+                <button class="prev-slide slider-btn">
+                    <svg class="rotate-[180deg]" fill="#000000" height="20px" width="20px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+                        viewBox="0 0 330 330" xml:space="preserve">
+                        <path id="XMLID_27_" d="M15,180h263.787l-49.394,49.394c-5.858,5.857-5.858,15.355,0,21.213C232.322,253.535,236.161,255,240,255
+                        s7.678-1.465,10.606-4.394l75-75c5.858-5.857,5.858-15.355,0-21.213l-75-75c-5.857-5.857-15.355-5.857-21.213,0
+                        c-5.858,5.857-5.858,15.355,0,21.213L278.787,150H15c-8.284,0-15,6.716-15,15S6.716,180,15,180z"/>
+                    </svg>
+                </button>
+                <button class="slider-btn next-slide">
+                    <svg fill="#000000" height="20px" width="20px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+                        viewBox="0 0 330 330" xml:space="preserve">
+                        <path id="XMLID_27_" d="M15,180h263.787l-49.394,49.394c-5.858,5.857-5.858,15.355,0,21.213C232.322,253.535,236.161,255,240,255
+                        s7.678-1.465,10.606-4.394l75-75c5.858-5.857,5.858-15.355,0-21.213l-75-75c-5.857-5.857-15.355-5.857-21.213,0
+                        c-5.858,5.857-5.858,15.355,0,21.213L278.787,150H15c-8.284,0-15,6.716-15,15S6.716,180,15,180z"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+ 
+        <div class="slider">
+            <div class="w-[450px] max-w-[95vw] bg-white p-4 border rounded-[1.3rem] bg-[url('../assets/blog.png')] bg-image h-[350px] !flex flex-col justify-between">
+                <div>
+                    <div class="badge bg-white text-red ms-auto flex !gap-[5px] items-center"><div class="w-2 h-2 bg-red-500 rounded-full"></div> Article</div>
+                </div>
+                <div class="bg-white p-5 rounded-2xl">
+                    <h5 class="font-bold mb-1 text-xl leading-[1.5rem]">GISEC Global Explore Cutting Edge Managed Security Solutions</h5>
+                    <div class="flex items-center justify-between">
+                        <div class="text-[10px] text-dark">July 23, 2024 · 3 mins read</div>
+                        <a class="w-[30px] h-[30px] link text-red font-medium" href="#"><img src="./icons/arrow-top-right-red.svg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-[320px] max-w-[95vw] bg-white p-4 border rounded-[1.3rem] bg-[url('../assets/blog.png')] bg-image h-[350px] !flex flex-col justify-between">
+                <div>
+                    <div class="badge bg-white text-red ms-auto flex !gap-[5px] items-center"><div class="w-2 h-2 bg-red-500 rounded-full"></div> Press release</div>
+                </div>
+                <div class="bg-white p-5 rounded-2xl">
+                    <h5 class="font-bold mb-1 text-xl leading-[1.5rem]">Future of Digital Innovation</h5>
+                    <div class="flex items-center justify-between">
+                        <div class="text-[10px] text-dark">July 23, 2024 · 3 mins read</div>
+                        <a class="w-[30px] h-[30px] link text-red font-medium" href="#"><img src="./icons/arrow-top-right-red.svg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-[320px] max-w-[95vw] bg-white p-4 border rounded-[1.3rem] bg-[url('../assets/blog.png')] bg-image h-[350px] !flex flex-col justify-between">
+                <div>
+                    <div class="badge bg-white text-red ms-auto flex !gap-[5px] items-center"><div class="w-2 h-2 bg-red-500 rounded-full"></div> Article</div>
+                </div>
+                <div class="bg-white p-5 rounded-2xl">
+                    <h5 class="font-bold mb-1 text-xl leading-[1.5rem]">ISO/IEC Workshop (ISMS)</h5>
+                    <div class="flex items-center justify-between">
+                        <div class="text-[10px] text-dark">July 23, 2024 · 3 mins read</div>
+                        <a class="w-[30px] h-[30px] link text-red font-medium" href="#"><img src="./icons/arrow-top-right-red.svg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-[500px] max-w-[95vw] bg-white p-4 border rounded-[1.3rem] bg-[url('../assets/blog.png')] bg-image h-[350px] !flex flex-col justify-between">
+                <div>
+                    <div class="badge bg-white text-red ms-auto flex !gap-[5px] items-center"><div class="w-2 h-2 bg-red-500 rounded-full"></div> Article</div>
+                </div>
+                <div class="bg-white p-5 rounded-2xl">
+                    <h5 class="font-bold mb-1 text-xl leading-[1.5rem]">GISEC Global Explore Cutting Edge Managed Security Solutions</h5>
+                    <div class="flex items-center justify-between">
+                        <div class="text-[10px] text-dark">July 23, 2024 · 3 mins read</div>
+                        <a class="w-[30px] h-[30px] link text-red font-medium" href="#"><img src="./icons/arrow-top-right-red.svg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-[320px] max-w-[95vw] bg-white p-4 border rounded-[1.3rem] bg-[url('../assets/blog.png')] bg-image h-[350px] !flex flex-col justify-between">
+                <div>
+                    <div class="badge bg-white text-red ms-auto flex !gap-[5px] items-center"><div class="w-2 h-2 bg-red-500 rounded-full"></div> Article</div>
+                </div>
+                <div class="bg-white p-5 rounded-2xl">
+                    <h5 class="font-bold mb-1 text-xl leading-[1.5rem]">Future of Digital Innovation</h5>
+                    <div class="flex items-center justify-between">
+                        <div class="text-[10px] text-dark">July 23, 2024 · 3 mins read</div>
+                        <a class="w-[30px] h-[30px] link text-red font-medium" href="#"><img src="./icons/arrow-top-right-red.svg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Us -->
+    <section class="container p-5 pt-10 mx-auto" id="contact">
+        <div class="bg-[#242424] w-full py-[2rem] md:py-[4rem] rounded-[2.5rem]">
+            <h5 class="text-3xl md:text-[4rem] md:leading-[4rem] font-bold mb-5 md:mb-10 text-center text-white ">Reach Out to Us!</h5>
+            <div class="contact-wrapper bg-[#FFF] p-[2rem] md:p-[4rem] md:max-w-[700px] mx-[2rem] md:mx-auto w-[100px] h-[100px] overflow-hidden rounded-full">
+                <form class="grid grid-cols-1 md:grid-cols-2 gap-[2rem]">
+                    <div><input type="text" placeholder="Name" required /></div>
+                    <div><input type="text" placeholder="Company" required /></div>
+                    <div><input type="email" placeholder="Email" required /></div>
+                    <div><input type="tel" placeholder="Phone" required /></div>
+                    <div class="md:col-span-2"><textarea rows="3" placeholder="Message"></textarea></div>
+                    <div class="md:col-span-2"><button class="btn ms-auto !px-6 !py-2 text-sm">Submit</button></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="container p-5 mx-auto mt-[5rem]">
+        <div class="grid md:grid-cols-10 gap-5 mb-[3rem]">
+            <div class="col-span-3 flex flex-col gap-5 text-center md:text-start">
+                <img src="./assets/logo.png" class="w-[90px] mx-auto md:mx-0">
+                <h5 class="text-2xl font-bold">We would love to hear from you.</h5>
+                <button class="p-2 px-5 rounded-full bg-[#F5F5F5] text-red font-semibold w-fit mx-auto md:mx-0">+ Become a Client</button>
+            </div>
+    
+            <div class="col-span-2 text-sm">
+                <h5 class="font-bold mb-3">Company</h5>
+                <div class="flex flex-col gap-1">
+                    <a href="#" class="link">Home</a>
+                    <a href="#" class="link">About Us</a>
+                    <a href="#" class="link">Case studies</a>
+                    <a href="#" class="link">In the Spotlight</a>
+                    <a href="#" class="link">Updates & Insights</a>
+                    <a href="#" class="link">Careers</a>
+                </div>
+            </div>
+    
+            <div class="col-span-3 text-sm">
+                <h5 class="font-bold mb-3">Discover</h5>
+                <div class="flex flex-col gap-1">
+                    <a href="#" class="link">Managed Services</a>
+                    <a href="#" class="link">Infrastructure & Cloud</a>
+                    <a href="#" class="link">Managed Security</a>
+                    <a href="#" class="link">AI, BI & Analytics</a>
+                    <a href="#" class="link">Innovation & Digital Transformation</a>
+                    <a href="#" class="link">Unified Communications</a>
+                </div>
+            </div>
+    
+            <div class="col-span-2 text-sm">
+                <h5 class="font-bold mb-3">Contact us</h5>
+                <div class="flex flex-col gap-3">
+                    <div>
+                        <p>Our Email</p>
+                        <a class="font-bold link" href="mailto:info@itmaxglobal.com">info@itmaxglobal.com</a>
+                    </div>
+                    <div>
+                        <p>Our Phone</p>
+                        <a class="font-bold link" href="tel:+97144541294">+ 971 4 454 1294</a>
+                    </div>
+    
+                    <p class="font-bold">Unit 804 Reef Tower- Cluster O, Jumeirah Lakes Towers DubaiUAE</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex flex-col md:flex-row gap-4 text-sm">
+            <p class="grow">&copy; Copyright 2024 - IT Max Global, All Rights Reserved. <a href="#" class="font-bold link">Privacy Policy</a></p>
+            <a class="font-bold text-end link" href="#home">Back to the top</a>
+        </div>
+    </footer>
+
+
+    <script src="./scripts/jquery-3.7.1.min.js"></script>
+    <script type="text/javascript" src="./scripts/slick.min.js"></script>
+    <script src="./scripts/tilt.min.js"></script>
+    <script src="./scripts/animations.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.js-tilt').tilt();
+
+            $('.open-sidebar').click(() => {
+                $('.sidebar').animate({ 
+                    left: 0,
+                }, 1000);
+                $('body').addClass('overflow-hidden');
+            });
+
+            $('.close-sidebar').click(() => {
+                $('.sidebar').animate({ 
+                    left: '-100vw',
+                }, 1000);
+                $('body').removeClass('overflow-hidden');
+            });
+
+            $('.partners .list-1, .partners .list-2').slick({
+                rtl: false,
+                autoplay: true,
+                autoplaySpeed: 1000,
+                variableWidth: false,
+                infinite: true,
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                dots: false,
+                centerMode: false,
+                prevArrow: false,
+                nextArrow: false,
+                responsive: [
+                    {
+                        breakpoint: 480,
+                        settings : {
+                            slidesToShow: 2
+                        }
+                    }
+                ]
+            });
+
+            $('.slider').slick({
+                variableWidth: true,
+                infinite: true,
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                dots: false,
+                centerMode: true,
+                prevArrow: false,
+                nextArrow: false,
+                //centerPadding: '60px',
+                //variableWidth: true,
+                responsive: [
+                    {
+                        breakpoint: 821,
+                        settings : {
+                            slidesToShow: 2
+                        }
+                    },
+                    {
+                        breakpoint: 480,
+                        settings : {
+                            slidesToShow: 1
+                        }
+                    }
+                ]
+            });
+
+            $('.next-slide').on('click', function() {
+                $('.slider').slick('slickNext'); // Move to the next slide
+            });
+            $('.prev-slide').on('click', function() {
+                $('.slider').slick('slickPrev'); // Move to the next slide
+            });
+
+            
+
+            // Header
+            let lastScrollPosition = $(window).scrollTop();
+            if (lastScrollPosition > 50) {
+                $("header").addClass("shadow active");
+            }
+
+            // Add scroll event listener
+            $(window).on("scroll resize", function () {
+                let currentScrollPosition = $(this).scrollTop();
+                // Check the scroll position
+                if (currentScrollPosition > 50) {
+                    // If the scroll is more than 50px, add the background class
+                    $("header").addClass("active");
+                } else {
+                    // If at the top, remove the background class
+                    $("header").removeClass("active");
+                }
+                $("header").removeClass( currentScrollPosition > lastScrollPosition ? "top-0" : 'top-[-60px]');
+                $("header").addClass( currentScrollPosition > lastScrollPosition ? "top-[-60px]" : 'top-0');
+                
+                // If Scrolling down
+                if (currentScrollPosition > lastScrollPosition) {
+                    if (isInViewport($('#services'), 50) && $( "#services" ).find('.heading') ) {
+                        $( "#services .heading" ).animate({
+                            top: "100px",
+                            opacity: 0
+                        }, {
+                            duration: 2000,
+                            specialEasing: {
+                                width: "linear",
+                                height: "easeOutBounce"
+                            },
+                            step: function( now, fx ){
+                                if( fx.prop == 'top' ){
+                                    $( "#services .content" ).css( "margin-top", -now );
+                                }
+                            },
+                            complete: function() {
+                                $( this ).remove();
+                                $( "#services .content" ).css( "margin-top", 0 );
+                            }
+                        });
+                    }
+
+                    if (isInViewport($('#quote'), 100) && $( "#quote" ).find('.heading') ) {
+                        $( "#quote .heading" ).animate({
+                            top: "90px",
+                            opacity: 0
+                        }, {
+                            duration: 2000,
+                            specialEasing: {
+                                width: "linear",
+                                height: "easeOutBounce"
+                            },
+                            step: function( now, fx ){
+                                if( fx.prop == 'top' ){
+                                    $( "#quote .content" ).css( "margin-top", -now );
+                                }
+                            },
+                            complete: function() {
+                                $( this ).remove();
+                                $( "#quote .content" ).css( "margin-top", 0 );
+                            }
+                        });
+                    }
+                
+                    if(isInViewport($('#stats'), 100)) {
+
+                        $( "#stats .stat-1" ).animate({
+                            top: "50px",
+                            rotate: '-9.5deg',
+                            left: '50px',
+                        }, 3000);
+
+                        $( "#stats .stat-2" ).animate({
+                            top: "-50px",
+                            rotate: '4.5deg'
+                        }, 3000);
+
+                        $( "#stats .stat-3" ).animate({
+                            top: "0px",
+                            rotate: '-3.5deg',
+                            left: '-50px',
+                        }, 3000);
+                    }
+                
+                
+                    if(isInViewport($('#contact'), 100) && !$('#contact').hasClass('is-animating')) {
+                        $('#contact').addClass('is-animating');
+
+                        $('#contact .contact-wrapper').animate({
+                            borderRadius: '2rem',
+                        }, {
+                            duration: 700,
+                            complete: function(){
+                                $('#contact .contact-wrapper').animate({
+                                    width: '80%'
+                                }, {
+                                    duration: 700,
+                                    complete: function(){
+                                        $('#contact .contact-wrapper').animate({
+                                            height: '80%',
+                                        }, {
+                                            duration: 700,
+                                            complete: function(){
+                                                $('#contact .contact-wrapper').removeClass('overflow-hidden');
+                                                $('#contact').removeClass('is-animating');
+                                            }
+                                        })
+                                    }
+                                })
+                            }
+                        })
+                    }
+                   
+                }
+
+                if( isInViewport($('#study-1'), 20 ) ){
+                    $('#study-image').attr('src', $('#study-1').data('src'));
+                }
+
+                if( isInViewport($('#study-2'), 20 ) ){
+                    $('#study-image').attr('src', $('#study-2').data('src'));
+                }
+
+                if( isInViewport($('#study-3'), 20 ) ){
+                    $('#study-image').attr('src', $('#study-3').data('src'));
+                }
+
+                if(isInViewport($('.global-partner-network'), 1)) {
+                    var leftPos = $('.global-partner-network div').scrollLeft();
+                    if (currentScrollPosition > lastScrollPosition) {
+                        $('.global-partner-network div').scrollLeft(leftPos + 10);
+                    }else{
+                        $('.global-partner-network div').scrollLeft(leftPos - 10);
+                    }
+                }
+
+                if(isInViewport($('.trusted-partner-network'), 1)) {
+                    var leftPos = $('.trusted-partner-network div').scrollLeft();
+                    if (currentScrollPosition > lastScrollPosition) {
+                        $('.trusted-partner-network div').scrollLeft(leftPos - 10);
+                    }else{
+                        $('.trusted-partner-network div').scrollLeft(leftPos + 10);
+                    }
+                }
+
+                // animated-logo
+                if( currentScrollPosition > 10 && currentScrollPosition <= 650 && currentScrollPosition > lastScrollPosition){
+                    $('.animated-logo').animate({ 
+                        opacity: 1,
+                        width: (currentScrollPosition+35) * 2,
+                        height: (currentScrollPosition+35) * 2,
+                    }, 0.5);
+                    $('.animated-logo svg').animate({ 
+                        opacity: 1,
+                        width: (currentScrollPosition+35) * 1.5,
+                        height: (currentScrollPosition+35) * 1.5,
+                    }, 0.5);
+                    
+                    if( currentScrollPosition > 500 ){
+                        $('.animated-logo').removeClass('bg-red');
+                        $('.animated-logo').addClass('bg-[#242424]');
+                    }
+                }else{
+                    $('.animated-logo').css({ opacity: 0, width: 35, height: 35});
+                    $('.animated-logo').removeClass('bg-[#242424]');
+                    $('.animated-logo').addClass('bg-red');
+                }
+
+                lastScrollPosition = currentScrollPosition;
+            });
+        
+        
+        
+            initBannerAnimation();
+        });
+
+
+        function isInViewport(element, percentage = 25) {
+            // const elementTop = $(element).offset().top;
+            // const elementBottom = elementTop + $(element).outerHeight();
+            // const viewportTop = $(window).scrollTop();
+            // const viewportBottom = viewportTop + $(window).height();
+            
+            // // Return true if the element is in the viewport
+            // return elementBottom > viewportTop && elementTop < viewportBottom;
+
+            const elementTop = $(element).offset().top;
+            const elementHeight = $(element).outerHeight();
+            const elementBottom = elementTop + elementHeight;
+            
+            const viewportTop = $(window).scrollTop();
+            const viewportBottom = viewportTop + $(window).height();
+
+            // Calculate the visible portion of the element within the viewport
+            const visibleTop = Math.max(viewportTop, elementTop);
+            const visibleBottom = Math.min(viewportBottom, elementBottom);
+            const visibleHeight = visibleBottom - visibleTop;  // Visible part of the element
+
+            // Check if at least the specified percentage (default: 25%) of the element is in view
+            const requiredHeight = (percentage / 100) * elementHeight;
+            return visibleHeight >= requiredHeight;
+        }
+
+        function initBannerAnimation(){
+            const heading3 = () => {
+                $( ".banner .heading-3" ).animate({
+                    scrollTop: $(".banner .heading-2").height() 
+                }, {
+                    duration: 2000,
+                    specialEasing: {
+                        width: "linear",
+                        height: "easeOutBounce"
+                    },
+                    complete: function() {
+                        $(".banner .heading-3").append($(".banner .heading-3").children().toArray().reverse());
+                        $(".banner .heading-3" ).animate({ scrollTop: 0 }, 0);
+                        setTimeout(() => {
+                            initBannerAnimation();
+                        }, 2000);
+                    }
+                });
+            }
+
+            const heading2 = () => {
+                $( ".banner .heading-2" ).animate({
+                    scrollTop: $(".banner .heading-2").height() 
+                }, {
+                    duration: 2000,
+                    specialEasing: {
+                        width: "linear",
+                        height: "easeOutBounce"
+                    },
+                    complete: function() {
+                        $(".banner .heading-2").append($(".banner .heading-2").children().toArray().reverse());
+                        $(".banner .heading-2" ).animate({ scrollTop: 0 }, 0);
+                        heading3();
+                    }
+                });
+            }
+
+            const heading1 = () => {
+                $( ".banner .heading-1" ).animate({
+                    scrollTop: $(".banner .heading-1").height() 
+                }, {
+                    duration: 2000,
+                    specialEasing: {
+                        width: "linear",
+                        height: "easeOutBounce"
+                    },
+                    complete: function() {
+                        $(".banner .heading-1").append($(".banner .heading-1").children().toArray().reverse());
+                        $(".banner .heading-1" ).animate({ scrollTop: 0 }, 0);
+                        heading2();
+                    }
+                });
+            }
+
+            heading1();
+        }
+    </script>
+</body>
+</html>
